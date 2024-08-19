@@ -28,7 +28,7 @@
         },
         "TOKEN": {
             "description": " توكن البوت",
-            "value": "7233031990:AAH2kM4024n3tNJ3aDjwHMkq0su6YHoeOF8",
+            "value": "7233031990:AAFj_pwKvWBEI31S1vUhNd-VLTEdfalBvK8",
             "required": true
         },
         "BOT_USERNAME": {
