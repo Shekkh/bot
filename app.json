@@ -3,13 +3,13 @@
     "description": "User bot for telegram !",
     "stack": "container",
     "logo": "https://graph.org/file/41cc2350b500c3ff3b387.jpg",
-    "repository": "https://github.com/eooe31/55",
+    "repository": "https://github.com/eooe31/bot",
     "keywords": [
         "python",
         "chatbot",
         "telegrambot"
     ],
-    "website": "https://github.com/eooe31/55",
+    "website": "https://github.com/eooe31/bot",
     "env": {
         "API_ID": {
             "description": "ايبي ايدي",
@@ -28,12 +28,12 @@
         },
         "TOKEN": {
             "description": " توكن البوت",
-            "value": "7233031990:AAFj_pwKvWBEI31S1vUhNd-VLTEdfalBvK8",
+            "value": "",
             "required": true
         },
         "BOT_USERNAME": {
             "description": "يوزر البوت بدون ـ@ـ",
-            "value": "ux1bot",
+            "value": "",
             "required": true
         }
     }

@@ -63,71 +63,72 @@ def gen_user(choice):
             c = random.choices(a)
             d = random.choices(a)
             s = random.choices(e)
-            f = [c[0], s[0], d[0]]
+            f = [c[0], "_", d[0]]
             random.shuffle(f)
             username = ''.join(f)
             username = username+'bot'
         else:
             pass
-    elif choice == "بوط":
+    elif choice == "بوت2":
         c = random.choices(a)
         d = random.choices(a)
         s = random.choices(b)
-        f = [c[0], s[0], d[0]]
-        username = ''.join(f)
-        username = username+'bot'
-    elif choice == "بو":
-        c = random.choices(a)
-        d = random.choices(b)
-        s = random.choices(a)
-        f = [c[0], s[0], d[0]]
-        username = ''.join(f)
-        username = username+'bot'
-    elif choice == "رقمين":
-        c = random.choices(a)
-        d = random.choices(b)
-        s = random.choices(b)
-        f = [c[0], s[0], d[0]]
-        username = ''.join(f)
-        username = username+'bot'
-
-    elif choice == "خير":
-        c = d = random.choices(a)
-        d = random.choices(e)
-        f = [c[0], d[0], "_"]
-        username = ''.join(f)
-        username = username+'bot'
-
-    elif choice == "وسط":
-        c = d = random.choices(a)
-        d = random.choices(e)
-        f = [c[0], "_", d[0]]
-        username = ''.join(f)
-        username = username+'bot'
-
-    elif choice == "حروف":
-        c = random.choices(a)
-        d = random.choices(a)
-        s = random.choices(a)
         f = [c[0], s[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         username = username+'bot'
-        
-    elif choice == "عشوائي":
-        c = random.choices(a)
-        d = random.choices(e)
+    elif choice == "بوت3":
+        c = d = random.choices(a)
         s = random.choices(e)
-        f = [c[0], s[0], d[0]]
+        f = [c[0], s[0], s[0]]
         random.shuffle(f)
         username = ''.join(f)
         username = username+'bot'
-        
-    elif choice == "شخط":
+    elif choice == "بوت4":
+        c = d = random.choices(a)
+        s = random.choices(e)
+        f = [c[0], s[0], c[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        username = username+'bot'
+
+    elif choice == "بوت5":
         c = d = random.choices(a)
         d = random.choices(e)
         f = [c[0], "_", d[0]]
         random.shuffle(f)
+        username = ''.join(f)
+        username = username+'bot'
+
+    elif choice == "بوت6":
+        c = random.choices(a)
+        d = random.choices(a)
+        s = random.choices(a)
+        f = [c[0], s[0], d[0]]
+        username = ''.join(f)
+        username = username+'bot'
+
+    elif choice == "بوت7":
+        c = random.choices(a)
+        d = random.choices(b)
+        s = random.choices(a)
+        f = [c[0], s[0], d[0]]
+        username = ''.join(f)
+        username = username+'bot'
+        
+    elif choice == "بوت8":
+        c = random.choices(a)
+        d = random.choices(a)
+        s = random.choices(b)
+        f = [c[0], s[0], d[0]]
+        username = ''.join(f)
+        username = username+'bot'
+        
+    elif choice == "بوت9":
+        c = random.choices(a)
+        d = random.choices(b)
+        s = random.choices(b)
+        f = [c[0], s[0], d[0]]
         username = ''.join(f)
         username = username+'bot'
     else:
@@ -143,37 +144,39 @@ async def _(event):
  الانواع :
  -- -- -- -- - 
  بوت 
- sxnbot [ عشوائي ]
- -- -- -- -- -- -- -- -- -- -- --
-  بوط 
-  s7m [ رقم نص ]
- -- -- -- -- -- 
- بو
- sc8bot [ رقم خير ]
-  -- -- -- -- --  
- رقمين
- s86bot [ بوت رقمين ]
- -- -- -- -- --
- وسط
- x_vbot [ شخطه وسط ]
- -- -- -- -- -- 
- خير
- xv_bot [ شخطه خير ]
- -- -- -- -- -- 
- حروف
- sxcbot { حروف فقط }
- -- -- -- -- -- 
- عشوائي
- sxkbot - sc6bot - s6vbot - d68bot
-  -- -- -- -- -- 
-  شخط
-  s_cbot - cv_bot
-   -- -- -- -- -- 
+ sxnbot - s_xbot - { عشوائي }
+×××××××××××××××××××××××
+  بوت2
+  s7m - sx7bot - { رقم }
+×××××××××××××××××××××××
+ بوت3
+ sxxbot - s77bot 
+ { بوت مكرر رقمين - حرفين }
+×××××××××××××××××××××××
+ بوت4
+ ssxbot - ss8bot 
+ { بوت مكرر رقم - حرف }
+×××××××××××××××××××××××
+ بوت5
+ s_xbot - s8_bot
+×××××××××××××××××××××××
+ بوت6
+ sxfbot - { حروف }
+×××××××××××××××××××××××
+ بوت7
+ xs5bot - { رقم بلخير }
+×××××××××××××××××××××××
+ بوت8
+ s5zbot - { رقم بلنص }
+×××××××××××××××××××××××
+ بوت9
+  s89bot - { رقمين }
+×××××××××××××××××××××××
    طريقه الصيد هيه كالتالي
  - .صيد + نوع الصيد تكتب الاسم 
 هوه ينشأ قناة تلقائي ويفحص بيها
  -- -- -- -- -- -- -- -- -- -- -- -- --  -- -- -- -- -- -- -- -- -- -- -- 
-مثال: .صيد ثلاثي
+مثال: .صيد بوت
  ---------------------------------------------------------------------- — — — —
  الامر:  `.صيد` + النوع
  - يقوم بصيد معرفات عشوائية حسب النوع
@@ -202,13 +205,13 @@ async def hunterusername(event):
         ch = str(msg[2])
         if "@" in ch:
             ch = ch.replace("@", "")
-        await event.edit(f"حسناً سيتم بدء الصيد في @{ch} .")
+        await event.edit(f"حسناً سيتم صيد {choice} في @{ch} .")
     except:
         try:
             ch = await eighthon(
                 functions.channels.CreateChannelRequest(
-                    title="صيد بوتات - @lllllj ",
-                    about="تم الصيد يوزر بوت - Selling IDs : @lllllj",
+                    title="صيد بوتات - Bot Hunting",
+                    about="تم الصيد يوزر بوت",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -234,7 +237,7 @@ async def hunterusername(event):
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    f"⌯ تم الصيد اليوزر @{username}",
+                    f"⌯ تم الصيد اليوزر @{username} - {choice}",
                 )
                 break
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -264,7 +267,7 @@ async def hunterusername(event):
         trys[0] += 1
     isclaim.clear()
     isclaim.append("off")
-    await event.client.send_message(event.chat_id, "**- انتهاء الفحص تم صيد بوت #x5 - **")
+    await event.client.send_message(event.chat_id, "انتهاء الفحص تم صيد معرف بوت n/ #bot")
 
 
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت"))
