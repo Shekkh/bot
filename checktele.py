@@ -205,7 +205,7 @@ async def hunterusername(event):
         ch = str(msg[2])
         if "@" in ch:
             ch = ch.replace("@", "")
-        await event.edit(f"حسناً سيتم صيد {choice} في @{ch} .")
+        await event.edit(f"جاري فحص نوع {choice} في @{ch} .")
     except:
         try:
             ch = await eighthon(
@@ -237,7 +237,7 @@ async def hunterusername(event):
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    f"⌯ تم الصيد اليوزر @{username} - {choice}",
+                    f"⌯ 𓆩 Source Max #1 🐊 !'𓆪\n⎱ User : ↣ (@{username}❳!\n⎱ Hunting type : {choice}\n⎱ Reminder : #bot",
                 )
                 break
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -267,7 +267,7 @@ async def hunterusername(event):
         trys[0] += 1
     isclaim.clear()
     isclaim.append("off")
-    await event.client.send_message(event.chat_id, "انتهاء الفحص تم صيد معرف بوت - #bot")
+    await event.client.send_message(event.chat_id, "انتهاء الفحص تم الصيد يوزر بوت")
 
 
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت"))
