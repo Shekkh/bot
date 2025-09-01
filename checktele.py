@@ -185,7 +185,7 @@ async def _(event):
  الامر:   `.حالة الصيد`
  • لمعرفة عدد المحاولات للصيد
 
-@lllllj**
+@FCF30**
 
 '''
     )
@@ -210,8 +210,8 @@ async def hunterusername(event):
         try:
             ch = await eighthon(
                 functions.channels.CreateChannelRequest(
-                    title="صيد بوتات - Bot Hunting",
-                    about="تم الصيد يوزر بوت",
+                    title="Prime",
+                    about="Fishing ID",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -237,7 +237,7 @@ async def hunterusername(event):
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    f"⌯ 𓆩 Source Max #1 🐊 !'𓆪\n⎱ User : ↣ (@{username}❳!\n⎱ Hunting type : {choice}\n⎱ Reminder : #bot",
+                    f"⌯ 𓆩 Prime #1 🐊 !'𓆪\n⎱ User : ↣ (@{username}❳!\n⎱ Hunting type : {choice}\n⎱ Reminder : #bot",
                 )
                 break
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -267,7 +267,7 @@ async def hunterusername(event):
         trys[0] += 1
     isclaim.clear()
     isclaim.append("off")
-    await event.client.send_message(event.chat_id, "انتهاء الفحص تم الصيد يوزر بوت")
+    await event.client.send_message(event.chat_id, "تم الصيد المعرف بنجاح ✅")
 
 
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت"))
@@ -388,7 +388,7 @@ async def _(event):
                         await event.client.send_message(event.chat_id, f'''** 
 𝙷𝚄𝙽𝚃𝙸𝙽𝙶 (@{username})
 × ᴄʟɪᴄᴋs ↬  {trys}
-lD: @Max985 / @P8_PP × @HFFHH **
+ **
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:

@@ -40,7 +40,7 @@ async def join_channel():
 LOGS = logging.getLogger(__name__)
 
 DEVS = [
-    5642852428
+    6080906215
 ]
 DEL_TIME_OUT = 10
 normzltext = "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
@@ -52,7 +52,7 @@ time_bio = ["on"]
 
 async def join_channel():
     try:
-        await eighthon(JoinChannelRequest("@MAX985"))
+        await eighthon(JoinChannelRequest("@fcf30"))
     except BaseException:
         pass
 
@@ -270,7 +270,7 @@ async def _(event):
     time_name.append("off")
     await eighthon(
         functions.account.UpdateProfileRequest(
-            first_name="@MAX985"
+            first_name="@fcf30"
         )
     )
 
@@ -310,7 +310,7 @@ async def _(event):
     time_bio.append("off")
     await eighthon(
         functions.account.UpdateProfileRequest(
-            about="@MAX985"
+            about="@fcf30"
         )
     )
 
@@ -442,7 +442,7 @@ async def _(event):
 ☆ Version : 1.4
 ☆ Ping : `{ms}`
 ☆ ID : `{event.sender_id}`
-☆ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇  : @MAX985**
+☆ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇  : @fcf30**
 ''')
 
 
@@ -499,14 +499,14 @@ async def _(event):
 `-- -- -- -- -- -- -- -- -- --`"""
                      )
 
-ownersaif_id = 5642852428
+ownersaif_id = 6080906215
 @eighthon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownersaif_id :
         order = await event.reply('** Hi MY Developer - @I_R_Y **')
 
-ownerbaqer_id = 5642852428
+ownerbaqer_id = 6080906215
 @eighthon.on(events.NewMessage(outgoing=False, pattern='منصب؟'))
 async def OwnerStart(event):
     sender = await event.get_sender()
